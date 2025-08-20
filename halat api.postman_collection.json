@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "8b7c5c72-1c6f-4802-8061-92980de2dff5",
+		"name": "halat api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47623253",
+		"_collection_link": "https://adefisanbabatunde-4609729.postman.co/workspace/6a678959-ccf1-42ac-8d3a-ad2cd01b2af5/collection/47623253-8b7c5c72-1c6f-4802-8061-92980de2dff5?action=share&source=collection_link&creator=47623253"
+	},
+	"item": [
+		{
+			"name": "waitlistapply",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phoneNumber\": \"08123765436\",\r\n    \"email\": \"itisuseneverthem@retmail\",\r\n    \"firstName\": \"wealth\",\r\n    \"lastName\": \"oye\",\r\n    \"whatBusinessAreYouInto\": \"entertainment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8900/waitList",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"waitList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\": \"08123765436\",\r\n    \"email\": \"itisuseneverthem@retmail\",\r\n    \"firstName\": \"wealth\",\r\n    \"lastName\": \"oye\",\r\n    \"whatBusinessAreYouInto\": \"entertainment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8900/waitList",
+							"host": [
+								"localhost"
+							],
+							"port": "8900",
+							"path": [
+								"waitList"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-K9ycmrn7yYa3ZSlrLEQim9LCX/w\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Aug 2025 14:34:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Waitlist entry created successfully\"\n}"
+				},
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\": \"08123765436\",\r\n    \"email\": \"itisuseneverthem@retmail\",\r\n    \"firstName\": \"wealth\",\r\n    \"lastName\": \"oye\",\r\n    \"whatBusinessAreYouInto\": \"entertainment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8900/waitList",
+							"host": [
+								"localhost"
+							],
+							"port": "8900",
+							"path": [
+								"waitList"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-K9ycmrn7yYa3ZSlrLEQim9LCX/w\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Aug 2025 14:34:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Waitlist entry created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "peopleonwaitlist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8900/listOfThoseOnWaitList",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"listOfThoseOnWaitList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8900/listOfThoseOnWaitList",
+							"host": [
+								"localhost"
+							],
+							"port": "8900",
+							"path": [
+								"listOfThoseOnWaitList"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "971"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3cb-knqGGtYiH9kpt0kGEKEo7EF8hEw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Aug 2025 14:38:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68a5cd9e5fa37842660f1521\",\n        \"phoneNumber\": 8034664573,\n        \"email\": \"fsxc@gmail.com\",\n        \"firstName\": \"Subii\",\n        \"lastName\": \"danii\",\n        \"whatBusinessAreYouInto\": \"backend\",\n        \"createdAt\": \"2025-08-20T13:29:02.218Z\",\n        \"updatedAt\": \"2025-08-20T13:29:02.218Z\"\n    },\n    {\n        \"_id\": \"68a5cf2d91a64edc1d50f665\",\n        \"phoneNumber\": 8034664573,\n        \"email\": \"fsxc@gmail.com\",\n        \"firstName\": \"Subii\",\n        \"lastName\": \"danii\",\n        \"whatBusinessAreYouInto\": \"backend\",\n        \"createdAt\": \"2025-08-20T13:35:41.822Z\",\n        \"updatedAt\": \"2025-08-20T13:35:41.822Z\"\n    },\n    {\n        \"_id\": \"68a5dbb498986561f91abae3\",\n        \"phoneNumber\": 805623555,\n        \"email\": \"subi@yopmail\",\n        \"firstName\": \"olasubomi\",\n        \"lastName\": \"danii\",\n        \"whatBusinessAreYouInto\": \"jesus is lord\",\n        \"createdAt\": \"2025-08-20T14:29:08.350Z\",\n        \"updatedAt\": \"2025-08-20T14:29:08.350Z\"\n    },\n    {\n        \"_id\": \"68a5dd0398986561f91abae5\",\n        \"phoneNumber\": 8123765436,\n        \"email\": \"itisuseneverthem@retmail\",\n        \"firstName\": \"wealth\",\n        \"lastName\": \"oye\",\n        \"whatBusinessAreYouInto\": \"entertainment\",\n        \"createdAt\": \"2025-08-20T14:34:43.913Z\",\n        \"updatedAt\": \"2025-08-20T14:34:43.913Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "viewnumberofthoseapplied",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8900/numberOfThoseOnWaitList",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"numberOfThoseOnWaitList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8900/numberOfThoseOnWaitList",
+							"host": [
+								"localhost"
+							],
+							"port": "8900",
+							"path": [
+								"numberOfThoseOnWaitList"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-WVxbdmlKX+9yTMxEiit65KfzcG0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Aug 2025 14:37:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"numberOfPeopleOnWaitList\": 4\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
